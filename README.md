@@ -73,15 +73,20 @@ URL	デプロイ済みのURLを記述。デプロイが済んでいない場合�
 
 ## address テーブル
 
-| Column        | Type            | Options                        |
-| --------------| --------------- | ------------------------------ |
-| postal_code   | string          | null: false                    |
-| prefecture_id | integer         | null: false                    |
-| city          | string          | null: false                    |
-| block         | string          | null: false                    |
-| building      | string          |                                |
-| phone_number  | string          | null: false                    |
-| user          | references      | null: false, foreign_key: true |
+| Column          | Type            | Options                  |
+| ----------------| --------------- | ------------------------ |
+| last_name       | string    | null: false                    |
+| first_name      | string    | null: false                    |
+| last_name_kana  | string    | null: false                    |
+| first_name_kana | string    | null: false                    |
+| birthday        | date      | null: false                    |
+| postal_code     | string    | null: false                    |
+| prefecture_id   | integer   | null: false                    |
+| city            | string    | null: false                    |
+| block           | string    | null: false                    |
+| building        | string    |                                |
+| phone_number    | string    | null: false                    |
+| user            | references| null: false, foreign_key: true |
 
 ### Association
 
